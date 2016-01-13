@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -56,67 +56,69 @@
 </layers>
 <library>
 <packages>
-<package name="MOLEX:47219-2001">
-<smd name="G4" x="0" y="0" dx="1.45" dy="2" layer="1"/>
-<smd name="G1" x="13.75" y="0" dx="1.45" dy="2" layer="1"/>
-<smd name="G3" x="0" y="8.3" dx="1.45" dy="2" layer="1"/>
-<smd name="G2" x="13.75" y="8.3" dx="1.45" dy="2" layer="1"/>
-<smd name="P8" x="2.38" y="2.6" dx="0.8" dy="1.5" layer="1"/>
-<smd name="P7" x="3.48" y="2.6" dx="0.8" dy="1.5" layer="1"/>
-<smd name="P6" x="4.58" y="2.6" dx="0.8" dy="1.5" layer="1"/>
-<smd name="P5" x="5.68" y="2.6" dx="0.8" dy="1.5" layer="1"/>
-<smd name="P4" x="6.78" y="2.6" dx="0.8" dy="1.5" layer="1"/>
-<smd name="P2" x="8.98" y="2.6" dx="0.8" dy="1.5" layer="1"/>
-<smd name="P1" x="10.08" y="2.6" dx="0.8" dy="1.5" layer="1"/>
-<smd name="P3" x="7.88" y="2.6" dx="0.8" dy="1.5" layer="1"/>
-<wire x1="0" y1="-2.55" x2="13.75" y2="-2.55" width="0.127" layer="21"/>
-<wire x1="13.75" y1="-2.55" x2="13.75" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.55" x2="0" y2="12.05" width="0.127" layer="21"/>
-<wire x1="0" y1="12.05" x2="13.75" y2="12.05" width="0.127" layer="21"/>
-<wire x1="13.75" y1="12.05" x2="13.75" y2="0.01" width="0.127" layer="21"/>
-<rectangle x1="-1.27" y1="-2.54" x2="15.24" y2="12.7" layer="39"/>
+<package name="LGA14_2,2X2,2">
+<wire x1="-1.1" y1="1.1" x2="1.1" y2="1.1" width="0.01" layer="21"/>
+<wire x1="1.1" y1="1.1" x2="1.1" y2="-1.1" width="0.01" layer="21"/>
+<wire x1="1.1" y1="-1.1" x2="-1.1" y2="-1.1" width="0.01" layer="21"/>
+<wire x1="-1.1" y1="-1.1" x2="-1.1" y2="1.1" width="0.01" layer="21"/>
+<text x="-1.4" y="1" size="0.5" layer="21" font="vector">*</text>
+<smd name="14" x="-0.4" y="1" dx="0.6" dy="0.23" layer="1" rot="R90"/>
+<smd name="13" x="0" y="1" dx="0.6" dy="0.23" layer="1" rot="R90"/>
+<smd name="12" x="0.4" y="1" dx="0.6" dy="0.23" layer="1" rot="R90"/>
+<smd name="5" x="-0.4" y="-1" dx="0.6" dy="0.23" layer="1" rot="R90"/>
+<smd name="6" x="0" y="-1" dx="0.6" dy="0.23" layer="1" rot="R90"/>
+<smd name="7" x="0.4" y="-1" dx="0.6" dy="0.23" layer="1" rot="R90"/>
+<smd name="2" x="-1" y="0.2" dx="0.6" dy="0.23" layer="1"/>
+<smd name="3" x="-1" y="-0.2" dx="0.6" dy="0.23" layer="1"/>
+<smd name="1" x="-1" y="0.6" dx="0.6" dy="0.23" layer="1"/>
+<smd name="4" x="-1" y="-0.6" dx="0.6" dy="0.23" layer="1"/>
+<smd name="11" x="1" y="0.6" dx="0.6" dy="0.23" layer="1" rot="R180"/>
+<smd name="10" x="1" y="0.2" dx="0.6" dy="0.23" layer="1"/>
+<smd name="9" x="1" y="-0.2" dx="0.6" dy="0.23" layer="1"/>
+<smd name="8" x="1" y="-0.6" dx="0.6" dy="0.23" layer="1"/>
 </package>
 </packages>
 <symbols>
-<symbol name="SD-CARD">
-<wire x1="2.54" y1="12.7" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-15.24" x2="-17.78" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-15.24" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="12.7" x2="-12.7" y2="7.62" width="0.254" layer="94" curve="-90"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="-17.78" y2="-15.24" width="0.254" layer="94" curve="-90"/>
-<text x="-17.78" y="17.78" size="1.778" layer="95">&gt;NAME</text>
-<text x="-17.78" y="15.24" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-15.24" y="7.62" size="1.778" layer="94" rot="R270">microSD CARD</text>
-<pin name="DAT2" x="7.62" y="10.16" length="middle" rot="R180"/>
-<pin name="CD/DAT3" x="7.62" y="7.62" length="middle" rot="R180"/>
-<pin name="CMD" x="7.62" y="5.08" length="middle" rot="R180"/>
-<pin name="VDD" x="7.62" y="2.54" length="middle" rot="R180"/>
-<pin name="CLK" x="7.62" y="0" length="middle" rot="R180"/>
-<pin name="VSS" x="7.62" y="-2.54" length="middle" rot="R180"/>
-<pin name="DAT0" x="7.62" y="-5.08" length="middle" rot="R180"/>
-<pin name="DAT1" x="7.62" y="-7.62" length="middle" rot="R180"/>
-<pin name="GND/SHIELD" x="7.62" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<symbol name="BMC150">
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<pin name="SDO" x="-20.32" y="7.62" visible="pin" length="middle"/>
+<pin name="INT1" x="-20.32" y="2.54" visible="pin" length="middle"/>
+<pin name="INT2" x="-20.32" y="-2.54" visible="pin" length="middle"/>
+<pin name="DRDY" x="-20.32" y="-7.62" visible="pin" length="middle"/>
+<pin name="SCK" x="20.32" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VDDIO" x="20.32" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="20.32" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="INT3" x="-5.08" y="-20.32" visible="pin" length="middle" rot="R90"/>
+<pin name="GND" x="5.08" y="-20.32" visible="pin" length="middle" rot="R90"/>
+<pin name="SDI" x="-5.08" y="22.86" visible="pin" length="middle" rot="R270"/>
+<pin name="PS" x="0" y="22.86" visible="pin" length="middle" rot="R270"/>
+<pin name="CSB" x="5.08" y="22.86" visible="pin" length="middle" rot="R270"/>
+<text x="12.7" y="-20.32" size="1.778" layer="96">BMC150</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOLEX-47219-2001">
+<deviceset name="BMC150">
 <gates>
-<gate name="G$1" symbol="SD-CARD" x="2.54" y="-2.54"/>
+<gate name="G$1" symbol="BMC150" x="-5.08" y="7.62"/>
 </gates>
 <devices>
-<device name="" package="MOLEX:47219-2001">
+<device name="" package="LGA14_2,2X2,2">
 <connects>
-<connect gate="G$1" pin="CD/DAT3" pad="P2"/>
-<connect gate="G$1" pin="CLK" pad="P5"/>
-<connect gate="G$1" pin="CMD" pad="P3"/>
-<connect gate="G$1" pin="DAT0" pad="P7"/>
-<connect gate="G$1" pin="DAT1" pad="P8"/>
-<connect gate="G$1" pin="DAT2" pad="P1"/>
-<connect gate="G$1" pin="GND/SHIELD" pad="G1 G2 G3 G4"/>
-<connect gate="G$1" pin="VDD" pad="P4"/>
-<connect gate="G$1" pin="VSS" pad="P6"/>
+<connect gate="G$1" pin="CSB" pad="12"/>
+<connect gate="G$1" pin="DRDY" pad="4"/>
+<connect gate="G$1" pin="GND" pad="6 7 9"/>
+<connect gate="G$1" pin="INT1" pad="2"/>
+<connect gate="G$1" pin="INT2" pad="3"/>
+<connect gate="G$1" pin="INT3" pad="5"/>
+<connect gate="G$1" pin="PS" pad="13"/>
+<connect gate="G$1" pin="SCK" pad="11"/>
+<connect gate="G$1" pin="SDI" pad="14"/>
+<connect gate="G$1" pin="SDO" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>

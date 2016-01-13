@@ -222,23 +222,13 @@
 </package>
 <package name="KEYSTONE1088">
 <rectangle x1="0" y1="-7.75" x2="68.9" y2="7.75" layer="39"/>
-<smd name="+" x="3.6703" y="0" dx="7.34" dy="6.35" layer="1"/>
-<smd name="-" x="65.228" y="0" dx="7.34" dy="6.35" layer="1"/>
+<smd name="+" x="7.62" y="0" dx="15.24" dy="8.9408" layer="1"/>
+<smd name="-" x="61.214" y="0" dx="15.24" dy="8.9408" layer="1"/>
 <wire x1="4.5" y1="-8" x2="64.4" y2="-8" width="0.127" layer="21"/>
 <wire x1="4.5" y1="-8" x2="4.5" y2="8" width="0.127" layer="21"/>
 <wire x1="4.5" y1="8" x2="64.4" y2="8" width="0.127" layer="21"/>
 <wire x1="64.4" y1="-8" x2="64.4" y2="8" width="0.127" layer="21"/>
-<hole x="7.3406" y="6.731" drill="2"/>
-</package>
-<package name="KEYSTONE1088_BENT_INWARDS">
-<rectangle x1="-31.369" y1="-7.75" x2="31.369" y2="7.75" layer="39"/>
-<smd name="+" x="-25.5397" y="0" dx="8.636" dy="6.35" layer="1"/>
-<smd name="-" x="25.858" y="0" dx="8.636" dy="6.35" layer="1"/>
-<wire x1="-29.79" y1="-8" x2="30.11" y2="-8" width="0.127" layer="21"/>
-<wire x1="-29.79" y1="-8" x2="-29.79" y2="8" width="0.127" layer="21"/>
-<wire x1="-29.79" y1="8" x2="30.11" y2="8" width="0.127" layer="21"/>
-<wire x1="30.11" y1="-8" x2="30.11" y2="8" width="0.127" layer="21"/>
-<hole x="-26.9494" y="6.731" drill="2"/>
+<hole x="7.2" y="6.7" drill="2"/>
 </package>
 </packages>
 <symbols>
@@ -344,16 +334,7 @@
 <gate name="G$1" symbol="BATTERY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="REGULAR" package="KEYSTONE1088">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="BENT_INWARDS" package="KEYSTONE1088_BENT_INWARDS">
+<device name="" package="KEYSTONE1088">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
